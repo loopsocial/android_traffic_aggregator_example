@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FW Traffic Aggregator Example</string>
+    <string name="payment_result_title">Payment result</string>
+    <string name="payment_result_message">Was the payment successful?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
