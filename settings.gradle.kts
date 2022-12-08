@@ -6,14 +6,18 @@ pluginManagement {
     }
 }
 
+@Suppress("UnstableApiUsage")
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        maven {
+            setUrl("https://jitpack.io")
+        }
     }
 }
 
-rootProject.name = "FW Traffic Aggregator Example"
+rootProject.name = "AndroidTrafficAggregatorExample"
 
-include ':app'
+include(":app")
