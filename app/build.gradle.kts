@@ -17,7 +17,6 @@ android {
         versionName = "1.0.0"
 
         buildConfigField("String", "FW_CLIENT_ID", "\"b9ca62b643050300d2990c57e8d76dbf65ddf3ed64b8f4c64c9faf21d5d37d4c\"")
-        buildConfigField("String", "FW_USER_ID", "\"Mohsen\"")
     }
 
     buildTypes {
@@ -53,6 +52,6 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
 
     // Firework Android Traffic Aggregator SDK
-    val fireworkSdkVersion = "1.0.0-beta.2"
+    val fireworkSdkVersion = "1.0.0-beta.3"
     implementation("com.github.loopsocial:android_traffic_aggregator_sdk:$fireworkSdkVersion")
 }

@@ -20,7 +20,7 @@ dependencyResolutionManagement {
 and then add this dependency to your application gradle:
 ```kotlin
 // Firework Android Traffic Aggregator SDK
-val fireworkSdkVersion = "1.0.0-beta.2"
+val fireworkSdkVersion = "1.0.0-beta.3"
 implementation("com.github.loopsocial:android_traffic_aggregator_sdk:$fireworkSdkVersion")  
 ```
 
@@ -74,7 +74,7 @@ class MyApplication : Application() {
 
 The `FwTrafficAggregatorSdk` init method requires a configuration that can be generated using `FwTrafficAggregatorSdkConfig.Builder`.
 
-You should set your client ID and possible user ID from your app which will be used for fetching the OAuth authentication token.
+You should set your `clientId` and optional `hostUserID`. The `hostUserID` is the user ID from your app which can be used for fetching the OAuth authentication token. You can also update the `hostUserId` at runtime in case of user login or logout using `FwTrafficAggregatorSdk.updateHostUserId` method.
 
 The `FwTrafficAggregatorSdk.init` function gets two callbacks for success and error cases. They can be used for debugging, error handling, and for informing the host app about successful SDK initialization.
 
