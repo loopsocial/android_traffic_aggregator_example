@@ -20,7 +20,7 @@ dependencyResolutionManagement {
 and then add this dependency to your application gradle:
 ```kotlin
 // Firework Android Traffic Aggregator SDK
-val fireworkSdkVersion = "1.0.0-beta.3"
+val fireworkSdkVersion = "1.0.0-beta.4"
 implementation("com.github.loopsocial:android_traffic_aggregator_sdk:$fireworkSdkVersion")  
 ```
 
@@ -51,7 +51,7 @@ class MyApplication : Application() {
 
         val sdkConfig = FwTrafficAggregatorSdkConfig.Builder(context = this)
             .setClientId(BuildConfig.FW_CLIENT_ID)
-            .setHostUserId(BuildConfig.FW_USER_ID)
+            .setUserId(BuildConfig.FW_USER_ID)
             .build()
 
         FwTrafficAggregatorSdk.init(
