@@ -13,7 +13,7 @@ class MyApplication : Application() {
 
         val sdkConfig = FwTrafficAggregatorSdkConfig.Builder(context = this)
             .setClientId(BuildConfig.FW_CLIENT_ID)
-            .setHostUserId("Mohsen") // This parameter is optional.
+            .setUserId("Mohsen") // This parameter is optional.
             .build()
 
         FwTrafficAggregatorSdk.init(
