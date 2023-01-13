@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.firework.example.trafficaggregator"
 
-        minSdk = 21
+        minSdk = 19
         targetSdk = 33
 
         versionCode = 1
@@ -42,7 +42,7 @@ android {
 
 dependencies {
     implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.5.1")
+    implementation("androidx.appcompat:appcompat:1.6.0")
     implementation("com.google.android.material:material:1.7.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
@@ -52,6 +52,6 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     // Firework Android Traffic Aggregator SDK
-    val fireworkSdkVersion = "1.0.0-beta.4"
+    val fireworkSdkVersion = "1.0.0-beta.5"
     implementation("com.github.loopsocial:android_traffic_aggregator_sdk:$fireworkSdkVersion")
 }
