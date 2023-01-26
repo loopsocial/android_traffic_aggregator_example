@@ -5,13 +5,13 @@ plugins {
 
 android {
     namespace = "com.firework.example.trafficaggregator"
-    compileSdk = 33
+    compileSdk = 31
 
     defaultConfig {
         applicationId = "com.firework.example.trafficaggregator"
 
         minSdk = 19
-        targetSdk = 33
+        targetSdk = 31
 
         versionCode = 1
         versionName = "1.0.0"
@@ -27,12 +27,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JavaVersion.VERSION_11.toString()
     }
 
     buildFeatures {
@@ -41,9 +41,9 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.0")
-    implementation("com.google.android.material:material:1.7.0")
+    implementation("androidx.core:core-ktx:1.8.0")
+    implementation("androidx.appcompat:appcompat:1.4.2")
+    implementation("com.google.android.material:material:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     testImplementation("junit:junit:4.13.2")
@@ -52,6 +52,6 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     // Firework Android Traffic Aggregator SDK
-    val fireworkSdkVersion = "1.0.0-beta.5"
+    val fireworkSdkVersion = "1.0.0-beta.6"
     implementation("com.github.loopsocial:android_traffic_aggregator_sdk:$fireworkSdkVersion")
 }

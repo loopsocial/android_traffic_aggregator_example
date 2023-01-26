@@ -20,16 +20,16 @@ dependencyResolutionManagement {
 and then add this dependency to your application gradle:
 ```kotlin
 // Firework Android Traffic Aggregator SDK
-val fireworkSdkVersion = "1.0.0-beta.5"
+val fireworkSdkVersion = "1.0.0-beta.6"
 implementation("com.github.loopsocial:android_traffic_aggregator_sdk:$fireworkSdkVersion")  
 ```
 
 ## Min requirements
 The min Android API supported by the SDK is 21 and it is targeting API 33.
 ```groovy
-compileSdk = 33
+compileSdk = 31
 minSdk = 19
-targetSdk = 33
+targetSdk = 31
 ```
 
 ## SDK initialization
