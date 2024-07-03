@@ -10,9 +10,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven {
-            setUrl("https://jitpack.io")
-        }
     }
 }
 ```
@@ -21,7 +18,7 @@ and then add this dependency to your application gradle:
 ```kotlin
 // Firework Android Traffic Aggregator SDK
 val fireworkSdkVersion = "1.0.0-beta.6"
-implementation("com.github.loopsocial:android_traffic_aggregator_sdk:$fireworkSdkVersion")  
+implementation("com.firework.embed:traffic-aggregator:$fireworkSdkVersion")
 ```
 
 ## Min requirements
@@ -40,9 +37,6 @@ import android.util.Log
 import android.widget.Toast
 import com.firework.sdk.trafficaggregator.FwTrafficAggregatorSdk
 import com.firework.sdk.trafficaggregator.FwTrafficAggregatorSdkConfig
-import tv.fw.di.functions.loadModule
-import tv.fw.di.functions.module
-import tv.fw.logger.Logger
 
 class MyApplication : Application() {
 

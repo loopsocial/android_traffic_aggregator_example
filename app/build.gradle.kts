@@ -53,5 +53,5 @@ dependencies {
 
     // Firework Android Traffic Aggregator SDK
     val fireworkSdkVersion = "1.0.0-beta.6"
-    implementation("com.github.loopsocial:android_traffic_aggregator_sdk:$fireworkSdkVersion")
+    implementation("com.firework.embed:traffic-aggregator:$fireworkSdkVersion")
 }
